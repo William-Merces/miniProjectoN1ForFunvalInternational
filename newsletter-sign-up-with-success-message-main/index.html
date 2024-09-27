@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Formulário de inscrição -->
+    <div class="form-wrapper">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <form id="subscription-form">
+        <label for="email" class="email-label">Email address</label>
+        <input type="email" id="email" name="email" placeholder="email@company.com" required>
+        <button type="submit" id="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+
+    <!-- Mensagem de sucesso (inicialmente oculta) -->
+    <div class="success-message hidden">
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to <span id="subscriber-email"></span>.
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button id="dismiss-btn">Dismiss message</button>
+    </div>
+
+    <!-- Imagem de fundo -->
+    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Background com janelas representando notícias"
+      class="background-image">
+  </div>
+
+  <!-- Nova página de agradecimento (inicialmente oculta) -->
+  <div class="thank-you-page hidden">
+    <img src="./assets/images/icon-success.svg" alt="Ícone de sucesso" class="success-icon">
+    <h2>Thanks for subscribing!</h2>
+    <p>A confirmation email has been sent to <span id="thank-you-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
+    <button id="dismiss-thank-you-btn">Dismiss message</button>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Indicated by <a href="#">Funval International</a>.
+    Coded by <a href="#">William Mercês</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
